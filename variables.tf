@@ -5,7 +5,7 @@ variable "vpc_id" {
 }
 
 variable "loadbalancer_security_groups" {
-    type = "list(string)"
+    type = "list"
     default = ["default"]
     description = "Names of security groups for the load balancer"
 }

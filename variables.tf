@@ -26,7 +26,6 @@ variable "r53zone" {
 
 variable "log_bucket" {
   description = "Bucket for logging to"
-  default = "aipeid.isikhnas.logs"
 }
 
 variable healthCheckPath {

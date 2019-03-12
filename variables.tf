@@ -41,7 +41,6 @@ variable healthCheckMatcher {
 
 variable sns_alert_name {
   type = "string"
-  default = "isikhnas-critical-error-notifications"
 }
 
 ### AUTO SCALE ###

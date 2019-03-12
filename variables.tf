@@ -4,6 +4,13 @@ variable "vpc_id" {
   description = "the VPC id for the load balancer"
 }
 
+variable "loadbalancer_security_groups" {
+    type = "list(string)"
+    default = ["default"]
+    description = "Names of security groups for the load balancer"
+}
+
+
 variable "project_name" {
   description = "name for the new load balancer"
 }

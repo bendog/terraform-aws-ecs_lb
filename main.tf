@@ -12,7 +12,7 @@ data "aws_s3_bucket" "log_bucket" {
 data "aws_security_groups" "loadbalancer_secuirty_groups" {
   filter {
     name   = "group-name"
-    values = ["default", "http-https", "ausvet_staff"]
+    values = "${var.loadbalancer_security_groups}"
   }
   filter {
     name   = "vpc-id"
